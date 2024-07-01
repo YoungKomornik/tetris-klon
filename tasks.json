@@ -1,0 +1,48 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe kompiluj aktywny plik",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-I",
+				"C:\\Users\\Dawid\\Documents\\programy\\biblioteki\\SFML-2.5.1\\include",
+				"-L",
+				"C:\\Users\\Dawid\\Documents\\programy\\biblioteki\\SFML-2.5.1\\lib",
+				"-g",
+				"C:\\Users\\Dawid\\Documents\\programy\\C++ SFML\\tetris\\tetris.cpp",
+				"-o",
+				"C:\\Users\\Dawid\\Documents\\programy\\C++ SFML\\tetris\\tetris.exe",
+				"-DSFML_STATIC",
+				"-lsfml-graphics-s",
+				"-lsfml-window-s",
+				"-lsfml-audio-s",
+				"-lsfml-system-s",
+				"-lopenal32",
+				"-lflac",
+				"-lvorbisenc",
+				"-lvorbisfile",
+				"-lvorbis",
+				"-logg",
+				"-lopengl32", 
+				"-lfreetype",
+				"-lwinmm",
+				"-lgdi32",
+				"-mwindows"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "kompilator: C:\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}

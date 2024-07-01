@@ -1,0 +1,93 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe kompiluj aktywny plik",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-I",
+				"C:\\msys64\\mingw64\\include",
+				"-L",
+				"C:\\msys64\\mingw64\\lib",
+				"-g",
+				"${file}",
+				"ikona.o",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-DSFML_STATIC",
+				"-lsfml-graphics-s",
+				"-lsfml-window-s",
+				"-lsfml-audio-s",
+				"-lsfml-system-s",
+				"-lopenal32",
+				"-lflac",
+				"-lvorbisenc",
+				"-lvorbisfile",
+				"-lvorbis",
+				"-logg",
+				"-lopengl32", 
+				"-lfreetype",
+				"-lwinmm",
+				"-lgdi32",
+				"-mwindows"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "kompilator: C:\\msys64\\mingw64\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "KURWA",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-I",
+				"C:\\msys64\\mingw64\\include",
+				"-L",
+				"C:\\msys64\\mingw64\\lib",
+				"-g",
+				"${file}",
+				"ikona.o",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-DSFML_STATIC",
+				"-lsfml-graphics-s",
+				"-lsfml-window-s",
+				"-lsfml-audio-s",
+				"-lsfml-system-s",
+				"-lopenal32",
+				"-lflac",
+				"-lvorbisenc",
+				"-lvorbisfile",
+				"-lvorbis",
+				"-logg",
+				"-lopengl32", 
+				"-lfreetype",
+				"-lwinmm",
+				"-lgdi32",
+				"-mwindows"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "kompilator: C:\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
